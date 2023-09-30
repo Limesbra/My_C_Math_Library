@@ -7,14 +7,11 @@ int my_abs(int x) {
   return x;
 }
 
-// long double fabs вычисляет абсолютное значение числа с плавающей точкой
 long double my_fabs(double x) {
   if (x < 0) x = -x;
   return (double)x;
 }
 
-// long double ceil возвращает ближайшее целое число, не меньшее заданного
-// значения
 long double my_ceil(double x) {
   long double result = (long long)x;
   if (MY_INFINITY_EQ(x) || x != x || x == -0.) {
@@ -28,8 +25,6 @@ long double my_ceil(double x) {
   return result;
 }
 
-// long double floor возвращает ближайшее целое число, не превышающее заданное
-// значение
 long double my_floor(double x) {
   long double result = (long long)x;
   if (MY_INFINITY_EQ(x) || x != x || x == -0.) {
@@ -39,8 +34,6 @@ long double my_floor(double x) {
 
   return result;
 }
-// long double fmod(double x, double y) остаток операции деления с плавающей
-// точкой
 
 long double my_fmod(double x, double y) {
   long long sfmod = x / y;
