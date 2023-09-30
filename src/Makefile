@@ -15,7 +15,7 @@ endif
 all : clean my_math.a test
 
 test: clean my_math.a
-	$(CC) $(CFLAGS) my_math_test.c -L. my_math.a -o test -lcheck -lsubunit -lm
+	$(CC) $(CFLAGS) my_math_test.c -L. my_math.a -o test $(LIBS)
 	./test
 
 my_math.a: my_math.o

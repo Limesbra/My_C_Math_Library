@@ -6,7 +6,7 @@
 
 #define EPS 0.000001
 /*------------------------EXP-------------------------*/
-START_TEST(s21_exp_test) {
+START_TEST(my_exp_test) {
   ck_assert_double_eq_tol(exp(0), my_exp(0), EPS);
   ck_assert_double_eq(exp(INFINITY), my_exp(INFINITY));
   ck_assert_double_eq(exp(-INFINITY), my_exp(-INFINITY));
